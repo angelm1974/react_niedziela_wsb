@@ -1,0 +1,25 @@
+import "./App.css";
+import Tekst from "./components/Tekst";
+import MyButton from "./components/MyButton";
+import ZaawansowanyButton from "./components/ZaawansowanyButton";
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <Tekst
+          tekst_opisu="Mój pierwszy opis"
+          tekst_przycisku="Mój pierwszy przycisk"
+        />
+        <Tekst
+          tekst_opisu="Wysyłanie maili"
+              />
+        <Tekst />
+        <MyButton />
+        <MyButton />
+        <ZaawansowanyButton handleClick={() => console.log("Kliknięto przycisk")} />
+      </header>
+    </div>
+  );
+}
+
+export default App;
